@@ -34,3 +34,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+
+      
+      - name: Deploy Flutter web app to github pages (removing large assets/NOTICES file)
+        # You may pin to the exact commit or the version.
+        # uses: AlienKevin/flutter-gh-pages@4e0be19d4fcfed6387414c958c6819eec1187806
+        uses: AlienKevin/flutter-gh-pages@v11
